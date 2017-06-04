@@ -1,0 +1,60 @@
+.page-archive{
+	.archive-entries{
+		justify-content: center;
+		padding: .5em;
+	}
+	.archive-entry{
+		position: relative;
+		width: 28em;
+		margin: .5em;
+		padding: .8rem;
+		background: @bg-fff;
+		.entry-title{
+			margin: .3em 0 0;
+			font-size: 1em;
+		}
+		&:hover{
+			a.entry-title-link{
+				color: @keyColor;
+				transition: all .3s;
+			}
+		}
+		a.entry-thumb-link{
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			div.entry-thumb{
+				background-image: none !important; //ソース直書きされてる箇所を上書き
+			}
+		}
+		.categories{
+			width: 100%;
+			text-align: left;
+			a{
+				display: inline-block;
+				color: @text-light;
+				margin: .8em 0;
+				padding: .4em 1em;
+				font-size: .7em;
+				background: @bg-lighter;
+				border-radius: .2em;
+				text-decoration: none;
+			}
+		}
+		.date{
+			a{
+				display: block;
+				font-size: 80%;
+				font-weight: normal;
+				color: @text-light;
+				text-decoration: none;
+			}
+		}
+		p.entry-description{
+			margin: 0;
+		}
+	}
+}

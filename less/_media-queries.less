@@ -1,0 +1,101 @@
+/* Media Queries - Large Display PC */
+@media (min-width: 1350px) {
+	body{
+		font-size: 120%;
+	}
+}
+
+/* Media Queries - Small PC & Tablet */
+@media (max-width: 1349px) {
+}
+
+/* Media Queries - Small Tablet & Smartphone */
+@media (max-width: 1023px) {
+}
+
+/* Media Queries - Smartphone Landscape */
+@media (max-width: 736px) {
+	/* nav */ //もともとmax480pxに入れていたが、スマホ横向き表示でなぜかクラッシュしたので分離
+	#nav-bg {
+		width: 2000px;
+		height: 2000px;
+		margin-left: -1000px;
+		margin-top: -1000px;
+		top: 32px;
+		left: 32px;
+	}
+	.menuButton {
+		height: 2.6em;
+		width: 2.6em;
+		margin: .655em;
+		svg{
+			width: 1.8em;
+		}
+	}
+	#global-nav a{
+		padding: 0 0 4px; //スマホ横向き表示で文字がはみ出る対策
+	}
+	.page-entry{
+		.entry-header-html{
+			.share{
+				position: relative;
+				left: auto;
+				top: auto;
+				padding: 0;
+				li{
+					display: inline-block;
+				}
+				.line{
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+/* Media Queries - Smartphone */
+@media (max-width: 480px) {
+	/* nav */
+	#global-nav a{
+		padding: 10px 0; //スマホ横向き表示で文字がはみ出る対策を元に戻す
+	}
+	/* page-entry */
+	.page-entry{
+		.entry-header{
+			padding: 12em 0 0;
+		}
+		/* entry-content */
+		.entry-content{
+			p{
+				width: 100%;
+			}
+			p.mainimage {
+				height: 12em;
+				img{
+					top:0;
+					left: 50%;
+					transform: translateX(-50%);
+					height: 100%;
+				}
+				img.bg{
+					display: none;
+				}
+			}
+			.code {
+				width: 85vw;
+			}
+		}
+	}
+	/* urllist module */
+	.urllist-with-thumbnails{
+		li .urllist-image{
+			display: none;
+		}
+	}
+	/* page-archive */
+	.page-archive{
+		.archive-entry{
+			width: 100%;
+		}
+	}
+}

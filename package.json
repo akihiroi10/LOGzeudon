@@ -1,0 +1,27 @@
+{
+  "name": "hatena-blog-theme",
+  "version": "1.0.0",
+  "description": "自分のブログ（ http://blog.rokuzeudon.com ）に適用しているオリジナルはてなブログテーマです。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rokuzeudon/blog-rokuzeudon-com.git"
+  },
+  "keywords": [
+    "hatena-blog"
+  ],
+  "author": "rokuzeudon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rokuzeudon/blog-rokuzeudon-com/issues"
+  },
+  "homepage": "https://github.com/rokuzeudon/blog-rokuzeudon-com#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-less": "^3.1.0"
+  }
+}
