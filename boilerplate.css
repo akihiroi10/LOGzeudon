@@ -573,18 +573,6 @@ ul.sns-area {
   box-sizing: border-box;
   border-radius: 2em;
 }
-#menuBody #global-nav a.twitter {
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  padding: .2em .4em;
-  font-size: .9em;
-  border: 1px #fff solid;
-}
-#menuBody #global-nav a.twitter i {
-  margin: 0 5px 0 2px;
-  font-size: 1.1em;
-}
 .open #menuBody #global-nav ul li {
   opacity: 1;
   -webkit-transform: scaleX(1) translateX(0);
