@@ -1156,6 +1156,10 @@ a.entry-see-more {
 }
 .page-entry .entry-header .date {
   width: 100%;
+  cursor: text;
+}
+.page-entry .entry-header .date a {
+  pointer-events: none;
 }
 .page-entry .entry-header .categories {
   width: 100%;
