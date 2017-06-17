@@ -1,5 +1,5 @@
 {
-  "name": "hatena-blog-theme",
+  "name": "LOGzeudon",
   "version": "1.0.0",
   "description": "自分のブログ（ http://blog.rokuzeudon.com ）に適用しているオリジナルはてなブログテーマです。",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rokuzeudon/blog-rokuzeudon-com.git"
+    "url": "git+https://github.com/rokuzeudon/LOGzeudon.git"
   },
   "keywords": [
     "hatena-blog"
@@ -16,9 +16,9 @@
   "author": "rokuzeudon",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rokuzeudon/blog-rokuzeudon-com/issues"
+    "url": "https://github.com/rokuzeudon/LOGzeudon/issues"
   },
-  "homepage": "https://github.com/rokuzeudon/blog-rokuzeudon-com#readme",
+  "homepage": "https://github.com/rokuzeudon/LOGzeudon#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
