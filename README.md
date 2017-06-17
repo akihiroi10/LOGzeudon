@@ -1,3 +1,3 @@
-# blog-rokuzeudon-com
+# LOGzeudon
 
 自分のブログ用に作成した、オリジナルはてなブログテーマです。
