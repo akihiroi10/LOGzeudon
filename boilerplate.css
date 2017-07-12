@@ -1291,7 +1291,8 @@ a.entry-see-more {
 }
 .page-entry .entry-content ul li,
 .page-entry .entry-content ol li {
-  margin: 0 .5em 1em 0;
+  margin: 0 .5em .5em 0;
+  line-height: 1.4;
 }
 .page-entry .entry-content ul li li,
 .page-entry .entry-content ol li li {
