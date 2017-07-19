@@ -260,18 +260,15 @@ h1,h2,h3,h4,h5,h6{
 	margin: .5em;
 	padding: 1em;
 	box-sizing: border-box;
+	border-radius: .8em;
 	max-width: 28em;
 	background: #f8f8f8;
-	transition: ease .3s;
+	transition: ease .14s;
 	&:hover{
+		background: @bg-fff;
 		a.entry-title-link{
 			color: @keyColor;
-			transition: ease .4s;
-		}
-		p.mainimage img{
-			transform: translate(-50%, -52.5%) scale(1.05);
-			transition: .3s ease-out;
-			box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.01), 0 12px 24px 0 rgba(0, 0, 0, 0.04)
+			transition: ease .14s;
 		}
 	}
 }

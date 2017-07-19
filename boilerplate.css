@@ -360,23 +360,6 @@ th {
   padding: 0;
 }
 /* import mixin */
-.clearfix {
-  display: block;
-  zoom: 1;
-}
-.clearfix:after {
-  display: block;
-  visibility: hidden;
-  font-size: 0;
-  height: 0;
-  clear: both;
-  content: ".";
-}
-.ellipsis {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
 /* import variable */
 /* Background color */
 /* Background color */
@@ -440,10 +423,6 @@ h6 a:visited {
   background-color: #fff;
   text-align: center;
   vertical-align: middle;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
   border-radius: 2px;
   background-clip: padding-box;
   cursor: pointer;
@@ -692,22 +671,19 @@ ul.sns-area {
   margin: .5em;
   padding: 1em;
   box-sizing: border-box;
+  border-radius: .8em;
   max-width: 28em;
   background: #f8f8f8;
-  -webkit-transition: ease .3s;
-  transition: ease .3s;
+  -webkit-transition: ease .14s;
+  transition: ease .14s;
+}
+.entry:hover {
+  background: #fff;
 }
 .entry:hover a.entry-title-link {
   color: #f36777;
-  -webkit-transition: ease .4s;
-  transition: ease .4s;
-}
-.entry:hover p.mainimage img {
-  -webkit-transform: translate(-50%, -52.5%) scale(1.05);
-          transform: translate(-50%, -52.5%) scale(1.05);
-  -webkit-transition: 0.3s ease-out;
-  transition: 0.3s ease-out;
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.01), 0 12px 24px 0 rgba(0, 0, 0, 0.04);
+  -webkit-transition: ease .14s;
+  transition: ease .14s;
 }
 .entry-header {
   -webkit-box-ordinal-group: 3;
@@ -782,10 +758,6 @@ a.entry-see-more {
   background-color: #fff;
   text-align: center;
   vertical-align: middle;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
   border-radius: 2px;
   background-clip: padding-box;
   cursor: pointer;
@@ -1133,6 +1105,7 @@ a.entry-see-more {
   padding: 0;
   width: 100%;
   max-width: 100%;
+  border-radius: 0;
   background: #fff;
 }
 .page-entry .entry:hover a.entry-title-link {
@@ -1536,10 +1509,6 @@ a.entry-see-more {
   background-color: #fff;
   text-align: center;
   vertical-align: middle;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
   border-radius: 2px;
   background-clip: padding-box;
   cursor: pointer;
