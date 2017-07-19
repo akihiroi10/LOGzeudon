@@ -1,19 +1,14 @@
 var gulp = require("gulp");
-
-// LESSコンパイル
 var less = require("gulp-less");
-gulp.task("less", function() {
-    gulp.src("boilerplate.less")
-        .pipe(less())
-        .pipe(gulp.dest("."));
-});
+var autoprefixer = require("gulp-autoprefixer");
+var clean = require("gulp-clean-css");
 
 // ベンダープレフィックス自動化
-var autoprefixer = require("gulp-autoprefixer");
 gulp.task("less", function() {
     gulp.src("boilerplate.less")
         .pipe(less())
         .pipe(autoprefixer())
+        .pipe(clean())
         .pipe(gulp.dest("."));
 });
 
