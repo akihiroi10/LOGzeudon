@@ -468,8 +468,15 @@ a.entry-see-more　{
 		}
 	}
 	.urllist-item{
+		overflow: hidden;
 		width: 100%;
-		background-color: @bg-fff;
+		border-radius: .4rem;
+		background-color: @bg-lighter;
+		transition: all .14s ease;
+		&:hover{
+			background-color: @bg-fff;
+			transition: all .14s ease;
+		}
 	}
 	.urllist-item-inner{
 		position: relative;
@@ -508,10 +515,11 @@ a.entry-see-more　{
 				display: inline-block;
 				margin: 0;
 				padding: .4em 1em;
-				background: @bg-fff;
+				background: @bg-lighter;
 				border-radius: .2em;
 				&:hover{
 					color: @keyColor;
+					background: @bg-fff;
 				}
 			}
 		}
