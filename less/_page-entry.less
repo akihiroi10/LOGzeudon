@@ -435,24 +435,33 @@
 			}
 		}
 	}
-
 	/* pager */
 	.pager{
 		.pager-prev, .pager-next{
 			width: 49%;
-			vertical-align: top;
-			&::before{
-				display: block;
-				margin: 1em 0 -2em;
-				color: @text-light;
-				font-size: 90%;
-			}
 		}
 		.pager-prev::before{
 			content: "次の新しい記事へ";
+			color: @text-light;
 		}
 		.pager-next::before{
 			content: "一つ前の記事へ";
+			color: @text-light;
+		}
+		.pager-prev a::after, .pager-next a::after,{
+			top: .6em;
+			height: auto;
+			padding: .52em .2em;
+		}
+		.pager-prev a::after{
+			content: "<";
+			left: .15em;
+			right: auto;
+		}
+		.pager-next a::after{
+			content: ">";
+			left: auto;
+			right: .15em;
 		}
 	}
 }

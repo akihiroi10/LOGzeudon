@@ -361,68 +361,65 @@ a.entry-see-more　{
 
 /* pager */
 .pager{
-	margin: 2em 0 0;
+	margin: 2em 1em 0;
 	width: 100%;
 	max-width: 40em;
 	text-align: center;
 	a{
 		display: inline-block;
-		margin: 2em 0;
-		padding: 1em .2em;
+		margin: 1em .2em;
+		padding: 1em;
 		text-decoration: none;
-		color: @keyColor;
+		color: @text;
+		background: @bg-lighter;
+		border-radius: .4rem;
 		transition: ease .14s;
 		&:hover{
 			color: @keyColor;
+			background: @bg-fff;
 			transition: ease .14s;
 		}
 	}
 	.pager-prev, .pager-next{
 		display: inline-block;
+		vertical-align: top;
 		a{
-			color: @text-light;
 			position: relative;
+			text-align: left;
 			&::before{
-				content: "";
 				display: block;
-				position: relative;
-				top: 0;
-				margin: 0 auto;
-				width: 5em;
-				height: 5em;
-				border-radius: 50%;
+				margin: 1em 0 -2em;
 				text-align: center;
-				background-color: @text-light;
-				transition: ease-in .2s;
+				font-size: 90%;
 			}
 			&::after{
+				content: ">";
+				display: block;
 				position: absolute;
-				top: 1em;
-				left: 0;
-				right: 0;
+				top: .5em;
+				right: .15em;
+				height: .8em;
+				padding: .2em;
+				border-radius: .2rem;
 				transform: scale(1,1.5);
-				font-size: 2em;
+				line-height: .8;
+				font-size: 1.6em;
 				color: @text-fff;
+				background: @text-lighter;
 				transition: ease-in .2s;
 			}
 			&:hover{
-				&::before{
-					top: -.5em;
-					background-color: @keyColor;
-					transition: ease-out .2s;
-				}
 				&::after{
-					top: .7em;
 					transition: ease-out .2s;
 				}
 			}
 		}
 	}
-	.pager-next a::after{
-		content: ">";
+	.pager-prev a{
+		padding: 1em 1em 1em 2.4em;
 	}
-	.pager-prev a::after{
-		content: "<";
+	.pager-next a{
+		padding: 1em 2.4em 1em 1em;
 	}
 }
 .pager-arrow{
