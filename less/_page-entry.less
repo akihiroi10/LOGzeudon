@@ -406,24 +406,25 @@
 	/* related-entries */
 	.hatena-module-related-entries{
 		.hatena-module-title{
-			margin: 35px 0 15px;
+			margin: 3em 0 1.5em;
 			font-weight: 500;
 		}
 		.urllist-item{
-			margin: 0;
-			background: @bg-fff;
-			border-bottom: @border 1px solid;
-			border-radius: 0;
+			margin: 0 0 1em;
+			background: @bg-lighter;
+			border: 2px solid @bg-lighter;
+			box-sizing: border-box;
+			overflow: hidden;
 			.urllist-title-link{
-				padding: 15px 0 5px;
+				padding: 1em 1em .5em
 			}
 			.urllist-categories, .bookmark-widget-counter{
-				padding: 0 0 15px;
+				padding: 0 1em 1em;
 			}
 			.urllist-category-link{
 				display: inline-block;
 				margin: 0;
-				padding: .2em 1em;
+				padding: .2em 1em .2em 0;
 				font-size: .8em;
 				color: @text;
 				background: @bg-lighter;
