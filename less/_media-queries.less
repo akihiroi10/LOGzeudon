@@ -59,6 +59,19 @@
 				left: auto;
 				top: auto;
 				padding: 0;
+				&::before{
+					display: none;
+				}
+				&::after{
+					content: '';
+					display: inline-block;
+					margin: .5em;
+					width: 2.6em;
+					height: 1.6em;
+					background: no-repeat;
+					background-image: url(https://data.rokuzeudon.com/blog/img/icn-share-sp.svg);
+					background-size: contain;
+				}
 				li{
 					display: inline-block;
 				}
