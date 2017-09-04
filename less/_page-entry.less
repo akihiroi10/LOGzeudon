@@ -29,6 +29,8 @@
 	.entry-header{
 		order: 1;
 		padding: 22em 0 0;
+		line-height: 1.4;
+		letter-spacing: .05em;
 		.entry-title{
 			font-size: 140%;
 			font-weight: 600;
@@ -62,29 +64,32 @@
 			background: @keyColor;
 		}
 	}
-	.entry-header-html{
-		.share{
-			position: fixed;
-			left: 0;
-			top: 8em;
-			z-index: 100;
-			list-style: none;
-			&::before{
-				content: '';
-				display: block;
-				margin: .3em auto;
-				width: 2.5em;
-				height: .6em;
-				background: no-repeat;
-				background-image: url(https://data.rokuzeudon.com/blog/img/icn-share.svg);
-				background-size: contain;
-				vertical-align: middle;
-			}
-			li a img{
-				width: 2.6em;
-			}
-			.line{
-				display: none;
+	.customized-header{
+		order: 4;
+		.entry-header-html{
+			.share{
+				position: fixed;
+				left: 0;
+				top: 8em;
+				z-index: 100;
+				list-style: none;
+				&::before{
+					content: '';
+					display: block;
+					margin: .3em auto;
+					width: 2.5em;
+					height: .6em;
+					background: no-repeat;
+					background-image: url(https://data.rokuzeudon.com/blog/img/icn-share.svg);
+					background-size: contain;
+					vertical-align: middle;
+				}
+				li a img{
+					width: 2.6em;
+				}
+				.line{
+					display: none;
+				}
 			}
 		}
 	}
@@ -94,7 +99,7 @@
 		order: 2;
 		width: 100%;
 		line-height: 1.8;
-		letter-spacing: .02em;
+		letter-spacing: .05em;
 		border-bottom: 1px solid @border;
 		p{
 			strong,b{
@@ -147,11 +152,11 @@
 			}
 		}
 		p.link{
-			margin: 1.4em auto;
+			margin: 1.4em auto 2.5em;
 			text-align: center;
 			a{
 			display: inline-block;
-			padding: .2em 2em 0;
+			padding: 0 2em;
 			height: 2em;
 			text-align: center;
 			text-decoration: none;
@@ -190,7 +195,6 @@
 			font-weight: 500;
 		}
 		h3{
-			margin: 2.5em 0 2em 0;
 			font-size: 140%;
 			font-weight: 600;
 			line-height: 1.4;
