@@ -482,6 +482,25 @@
 	}
 }
 
+// 非ログインユーザー向けの表示対応
+.guest-footer{
+	max-width: 30em;
+	margin: 1em auto;
+	padding: 1em;
+	.guest-footer-content{
+		margin: 0;
+		padding: 0 1.2em 1em;
+		box-sizing: border-box;
+		border-radius: .4rem;
+		background: @bg-lighter;
+		border: solid 2px @border;
+	}
+	h3{
+		margin: 1.5em 0 1em;
+		font-size: 120%;
+	}
+}
+
 @media all and (-ms-high-contrast:none){
 	.page-entry .entry-content p.mainimage .bg{
 		filter: blur(0); //IEで親要素の端っこに墨溜まりみたいな表示になってしまう対策
